@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carrello | Rizzato Fiori, Lecce</title>
+<meta name="description" content="Il tuo ordine da Rizzato Fiori: consegna a Lecce e nel Salento.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#FFFBFA">
+<link rel="canonical" href="https://fraspin02.github.io/rizzato-fiori-bozza/carrello.html">
+<meta property="og:type" content="website"><meta property="og:locale" content="it_IT"><meta property="og:site_name" content="Rizzato Fiori">
+<meta property="og:title" content="Carrello | Rizzato Fiori, Lecce"><meta property="og:description" content="Il tuo ordine da Rizzato Fiori: consegna a Lecce e nel Salento.">
+<meta property="og:url" content="https://fraspin02.github.io/rizzato-fiori-bozza/carrello.html"><meta property="og:image" content="https://fraspin02.github.io/rizzato-fiori-bozza/img/anteprima.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/pinyon-script.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Instrument Serif";font-style:italic;src:url(fonts/instrument-serif-italic.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Pinyon Script";src:url(fonts/pinyon-script.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url(fonts/instrument-sans.woff2) format("woff2");font-weight:400 700;font-display:swap}
+:root{
+  --latte:#FFFBFA;--velina:#F6EAEA;--pietra:#E9DFD0;--stelo:#14322F;--stelo-2:#4C5F5B;
+  --rosa-antico:#9A4A5C;--rosa-antico-scuro:#7A3647;--rosa:#E8C4CC;--wa:#13703B;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --p:clamp(56px,14vw,150px);--p-s:clamp(28px,7vw,60px);
+  --gutter:clamp(16px,4.5vw,40px);--max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--latte);color:var(--stelo);font:400 1.0625rem/1.6 var(--sans)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 em,h2 em{color:var(--rosa-antico)}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.salta{position:absolute;left:-9999px}.salta:focus{left:12px;top:12px;z-index:99;background:var(--stelo);color:#fff;padding:10px 14px}
+:focus-visible{outline:3px solid var(--rosa-antico);outline-offset:3px}
+.occhiello{font:600 .8125rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--stelo-2)}
+.icona{width:1.25em;height:1.25em;flex:none;fill:currentColor}
+
+/* testata */
+.testata{position:sticky;top:0;z-index:20;background:rgba(255,251,250,.96);border-bottom:1px solid #EADCDC}
+.testata .wrap{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;min-height:68px}
+.marchio{justify-self:center;text-decoration:none;text-align:center;line-height:1}
+.marchio b{display:block;font:400 2.125rem/1.05 "Pinyon Script",var(--serif);color:var(--stelo);white-space:nowrap}
+.marchio b i{font-style:normal}
+.marchio small{display:block;margin-top:7px;font:600 .625rem/1 var(--sans);letter-spacing:.42em;padding-left:.42em;color:var(--stelo-2)}
+.carrello-testata{justify-self:end;position:relative;display:grid;place-items:center;width:48px;height:48px;color:var(--stelo);text-decoration:none}
+.carrello-testata .icona{width:26px;height:26px}
+.conta{position:absolute;top:4px;right:2px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--rosa-antico);color:#fff;font:600 .75rem/20px var(--sans);text-align:center}
+.avviso-bozza{margin:0;background:var(--stelo);color:#DCE3E0;font-size:.8125rem;text-align:center;padding:6px 12px}
+.tel-ampio{display:inline-flex;align-items:center;gap:6px}
+.nav-ampia a[aria-current]{color:var(--rosa-antico)}
+.menu{justify-self:start}
+.menu summary{list-style:none;cursor:pointer;width:48px;height:48px;display:grid;place-items:center}
+.menu summary::-webkit-details-marker{display:none}
+.menu summary span{display:block;width:24px;height:2px;background:var(--stelo);box-shadow:0 -7px 0 var(--stelo),0 7px 0 var(--stelo)}
+.menu[open] summary span{background:transparent;box-shadow:none}
+.menu[open] summary span::before,.menu[open] summary span::after{content:"";display:block;width:24px;height:2px;background:var(--stelo);transform:rotate(45deg)}
+.menu[open] summary span::after{transform:translateY(-2px) rotate(-45deg)}
+.menu nav{position:fixed;left:0;right:0;top:100px;bottom:0;background:var(--latte);padding:24px var(--gutter);display:flex;flex-direction:column;gap:4px;overflow:auto}
+.menu nav a{font:400 2.25rem/1.2 var(--serif);text-decoration:none;padding:8px 0;border-bottom:1px solid #EADCDC}
+.menu nav a.btn{margin-top:14px;font:600 1rem/1 var(--sans)}
+.menu nav a.btn-wa{border:0}
+.nav-ampia{display:none}
+
+/* pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:20px 6px 20px 6px;font:600 1rem/1.1 var(--sans);text-decoration:none;border:2px solid transparent;transition:background-color .2s,color .2s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#0c5c2f}
+.btn-pieno{background:var(--rosa-antico);color:#fff}
+.btn-pieno:hover{background:var(--rosa-antico-scuro)}
+.btn-vuoto{border-color:var(--stelo);color:var(--stelo);background:transparent}
+.btn-vuoto:hover{background:var(--stelo);color:var(--latte)}
+.azioni{display:flex;flex-wrap:wrap;gap:12px}
+.azioni .btn{flex:1 1 220px}
+
+/* hero */
+.hero{padding:14px 0 8px}
+.hero .wrap{display:grid;gap:18px}
+.hero h1{font-size:clamp(2.6rem,10.5vw,5.25rem);margin:8px 0 14px}
+.hero h1 em{display:block}
+.hero .sotto{font-size:1.125rem;max-width:34em;color:var(--stelo-2);margin-bottom:24px}
+.fiducia{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:.9375rem;color:var(--stelo-2)}
+.fiducia span{display:inline-flex;align-items:center;gap:6px}
+.fiducia .stelle{color:var(--rosa-antico);font-weight:600}
+.foto-hero{position:relative;order:-1}
+.foto-hero img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:50% 35%;border-radius:var(--p) 14px var(--p) 14px}
+.foto-hero figcaption{position:absolute;right:12px;bottom:12px;background:rgba(20,50,47,.86);color:var(--latte);font-size:.8125rem;padding:6px 12px;border-radius:12px 3px 12px 3px}
+
+/* sezioni */
+.sez{padding:64px 0}
+.sez-testa{display:grid;gap:12px;margin-bottom:28px;max-width:40em}
+.sez-testa h2{font-size:clamp(2.25rem,8vw,3.75rem)}
+.sez-testa p{color:var(--stelo-2)}
+.velina{background:var(--velina)}
+
+/* occasioni */
+.occasioni{display:grid;grid-template-columns:1fr 1fr;gap:20px 14px;list-style:none;margin:0;padding:0}
+.occasioni a{display:block;text-decoration:none}
+.occasioni img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--p-s) 8px var(--p-s) 8px;transition:transform .35s}
+.occasioni a:hover img{transform:scale(1.02)}
+.occasioni h3{font-size:1.75rem;margin:10px 0 2px}
+.occasioni p{font-size:.9375rem;color:var(--stelo-2);line-height:1.4}
+.cordoglio-ingresso{margin-top:28px;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;padding:16px;background:var(--stelo);color:var(--latte);border-radius:28px 6px 28px 6px;text-decoration:none}
+.cordoglio-ingresso img{width:96px;height:120px;object-fit:cover;border-radius:20px 4px 20px 4px}
+.cordoglio-ingresso h3{font-size:1.75rem}
+.cordoglio-ingresso p{color:#C9D3CF;font-size:.9375rem;line-height:1.4;margin-top:4px}
+.cordoglio-ingresso u{text-decoration:none;color:var(--pietra);font-weight:600;display:inline-block;margin-top:6px}
+
+/* prodotti */
+.prodotti{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px;list-style:none;margin:0;padding:0}
+.prodotto{display:flex;flex-direction:column}
+.prodotto .foto{position:relative;margin-bottom:12px}
+.prodotto img{width:100%;aspect-ratio:31/40;object-fit:cover;background:#fff;border-radius:var(--p-s) 8px var(--p-s) 8px}
+.prodotto.serie img{object-fit:contain;padding:6%;border:1px solid #EADCDC}
+.nastro{position:absolute;left:-6px;bottom:14px;background:var(--rosa-antico);color:#fff;font:600 .9375rem/1 var(--sans);padding:8px 22px 8px 12px;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 50%,100% 100%,0 100%)}
+.nastro small{font-weight:400;font-size:.75rem;margin-right:3px}
+.prodotto h3{font:600 1rem/1.3 var(--sans);letter-spacing:0}
+.prodotto h3 a{text-decoration:none}
+.prodotto h3 a:hover{color:var(--rosa-antico)}
+.prodotto .foto{display:block}
+.card-azioni{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-top:12px}
+.card-azioni .btn-vuoto{display:none}
+.card-azioni .btn{margin-top:0;min-height:44px;padding:0 8px}
+.prodotto.sobrio .prezzo-sobrio{color:var(--stelo-2);font-size:.9375rem;margin-top:4px}
+.prodotto .btn{min-height:44px;font-size:.875rem;padding:0 12px;width:100%;margin-top:12px}
+.prodotto .spazio{flex:1}
+.altro{margin-top:36px}
+
+/* consegna */
+.consegna{display:grid;gap:32px}
+.passi{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:p}
+.passi li{display:grid;grid-template-columns:56px 1fr;gap:4px 14px;counter-increment:p}
+.passi li::before{content:counter(p);grid-row:span 2;font:italic 400 3.5rem/.9 var(--serif);color:var(--rosa-antico)}
+.passi h3{font:600 1.125rem/1.3 var(--sans)}
+.passi p{color:var(--stelo-2)}
+.nota{margin-top:24px;padding:16px 18px;border-left:3px solid var(--rosa-antico);background:var(--latte);font-size:.9375rem;border-radius:0 14px 14px 0}
+.consegna figure{margin:0}
+.consegna figure img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px var(--p-s) 14px var(--p-s)}
+.consegna figcaption{font-size:.875rem;color:var(--stelo-2);margin-top:8px}
+
+/* onoranze: sobrio */
+.onoranze{background:var(--stelo);color:var(--latte)}
+.onoranze .occhiello{color:#C9D3CF}
+.onoranze .sez-testa p{color:#DCE3E0}
+.onoranze-griglia{display:grid;gap:28px}
+.recapito{padding:24px;border:1px solid #3c5955;border-radius:28px 6px 28px 6px}
+.recapito p{color:#C9D3CF}
+.recapito .numero{display:block;margin:6px 0 4px;font:400 clamp(2.25rem,9vw,3rem)/1.1 var(--serif);color:var(--latte);text-decoration:none}
+.btn-pietra{background:var(--pietra);color:var(--stelo);margin-top:18px;width:100%}
+.btn-pietra:hover{background:#fff}
+.onoranze blockquote{margin:0;font:italic 400 1.5rem/1.35 var(--serif);color:var(--latte)}
+.onoranze cite{display:block;margin-top:10px;font:400 .875rem/1.4 var(--sans);font-style:normal;color:#C9D3CF}
+.link-chiaro{color:var(--pietra);font-weight:600}
+
+/* recensioni */
+.voto{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.voto b{font:400 4rem/1 var(--serif);color:var(--rosa-antico)}
+.recensioni{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.recensioni li{background:var(--latte);padding:22px;border-radius:24px 6px 24px 6px}
+.recensioni q{display:block;font:italic 400 1.375rem/1.35 var(--serif);quotes:"“" "”"}
+.recensioni span{display:block;margin-top:10px;font-size:.875rem;color:var(--stelo-2)}
+
+/* dove */
+.dove{display:grid;gap:28px}
+.dove img{width:100%;border-radius:14px var(--p-s) 14px var(--p-s)}
+.orari{width:100%;border-collapse:collapse;margin:18px 0 22px;font-size:.9375rem}
+.orari th,.orari td{text-align:left;padding:9px 0;border-bottom:1px solid #E6DADA;font-weight:400;vertical-align:top}
+.orari th{width:44%;font-weight:600}
+.indirizzo{font:400 1.75rem/1.2 var(--serif)}
+
+/* piede */
+.piede{background:var(--stelo);color:#DCE3E0;padding:48px 0 32px;font-size:.9375rem}
+.piede .wrap{display:grid;gap:28px}
+.piede .marchio{justify-self:start;text-align:left}
+.piede .marchio b{color:var(--rosa)}.piede .marchio b i{color:var(--rosa)}.piede .marchio small{color:#C9D3CF}
+.piede h2{font:600 .8125rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#C9D3CF;margin-bottom:8px}
+.piede a{color:var(--latte)}
+.piede ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.piede .legale{border-top:1px solid #3c5955;padding-top:20px;font-size:.8125rem;color:#C9D3CF}
+
+/* vantaggi */
+.vantaggi{list-style:none;margin:20px 0 0;padding:16px 0;display:grid;gap:12px;border-top:1px solid #EADCDC;border-bottom:1px solid #EADCDC}
+.vantaggi li{display:flex;gap:12px;align-items:center;font-size:.9375rem;color:var(--stelo-2)}
+.vantaggi .icona{width:28px;height:28px;color:var(--rosa-antico)}
+.vantaggi b{display:block;color:var(--stelo)}
+.sez-testa.riga{max-width:none}
+.link-freccia{font-weight:600;color:var(--rosa-antico)}
+.briciole{font-size:.875rem;color:var(--stelo-2);padding:18px 0 4px}
+.briciole a{color:var(--stelo-2)}
+.briciole.chiara,.briciole.chiara a{color:#C9D3CF}
+.titolo-pagina{font-size:clamp(2.5rem,9vw,4rem);margin:8px 0 24px}
+
+/* catalogo */
+.cat-testa{padding:32px 0 8px}
+.cat-testa h1{font-size:clamp(2.75rem,10vw,4.5rem);margin:10px 0 14px}
+.cat-testa p{color:var(--stelo-2);max-width:38em}
+.barra-cat{position:sticky;top:68px;z-index:10;background:rgba(255,251,250,.97);border-bottom:1px solid #EADCDC}
+.barra-cat .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding-top:10px;padding-bottom:10px}
+.chips{min-width:0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--gutter)*-1);padding:2px var(--gutter)}
+.chip{flex:none;min-height:44px;padding:0 16px;border:1.5px solid #DDC2C8;border-radius:16px 4px 16px 4px;background:transparent;color:var(--stelo);font:600 .9375rem/1 var(--sans);cursor:pointer;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--stelo);border-color:var(--stelo);color:var(--latte)}
+.ordina{display:flex;justify-content:space-between;align-items:center;font-size:.875rem;color:var(--stelo-2)}
+.ordina select{margin-left:6px;min-height:40px;border:1px solid #DDC2C8;border-radius:10px;background:var(--latte);color:var(--stelo);font:inherit;padding:0 8px}
+.nota-cordoglio{margin-top:28px;padding:16px 18px;background:var(--stelo);color:var(--latte);border-radius:14px}
+.nota-cordoglio a{color:var(--pietra)}
+.gruppo{padding:28px 0 8px}
+.gruppo .sez-testa{margin-bottom:22px}
+.gruppo .sez-testa h2{font-size:clamp(2rem,7vw,3rem)}
+.gruppo-cordoglio{background:var(--stelo);color:var(--latte);margin-top:44px;padding-bottom:48px}
+.gruppo-cordoglio .sez-testa p{color:#DCE3E0}
+.gruppo-cordoglio .prodotto h3{color:var(--latte)}
+.gruppo-cordoglio .prezzo-sobrio{color:#C9D3CF;font-size:.9375rem;margin-top:4px}
+.gruppo-cordoglio .prodotto.serie img{border-color:#3c5955}
+.chiusura{padding:56px 0 64px}
+.chiusura .box{background:var(--velina);padding:28px;border-radius:var(--p-s) 8px var(--p-s) 8px;display:grid;gap:16px}
+.chiusura h2{font-size:clamp(2rem,7vw,3rem)}
+
+/* scheda */
+.scheda{display:grid;gap:24px;padding:8px 0 40px}
+.scheda-foto{position:relative;margin:0;width:100%;max-width:480px;justify-self:center}
+.scheda-foto img{width:100%;aspect-ratio:31/40;object-fit:cover;background:#fff;border-radius:var(--p) 14px var(--p) 14px}
+.scheda-foto.serie img{object-fit:contain;padding:8%;border:1px solid #EADCDC}
+.scheda-foto .nastro{bottom:28px;font-size:1.125rem;padding:10px 26px 10px 14px}
+.scheda-info h1{font-size:clamp(2.25rem,8vw,3.5rem);margin:6px 0 10px}
+.scheda-prezzo{display:flex;align-items:baseline;gap:10px;font:400 2rem/1 var(--serif);color:var(--rosa-antico)}
+.scheda-prezzo small{font:400 .8125rem/1 var(--sans);color:var(--stelo-2)}
+.scheda-desc{margin:16px 0 8px;color:var(--stelo-2);display:grid;gap:6px}
+.scheda-form{display:grid;gap:18px;margin-top:18px}
+.misure{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.misure legend,.campo label,.fascia-oraria legend{font-weight:600;font-size:.9375rem;margin-bottom:8px;padding:0}
+.campo label span{font-weight:400;color:var(--stelo-2)}
+.misura{position:relative;cursor:pointer}
+.misura input{position:absolute;opacity:0}
+.misura span{display:grid;gap:2px;min-width:132px;padding:12px 16px;border:1.5px solid #DDC2C8;border-radius:18px 5px 18px 5px;font-size:.9375rem}
+.misura input:checked+span{border-color:var(--rosa-antico);box-shadow:inset 0 0 0 1px var(--rosa-antico);background:var(--velina)}
+.misura input:focus-visible+span{outline:3px solid var(--rosa-antico);outline-offset:2px}
+.campo{display:grid}
+.campo-riga{display:grid;gap:18px}
+.campo input,.campo select,.campo textarea{width:100%;min-height:48px;padding:10px 12px;border:1.5px solid #DDC2C8;border-radius:12px;background:#fff;color:var(--stelo);font:inherit}
+.campo small{margin-top:6px;color:var(--stelo-2);font-size:.8125rem}
+.qta{display:inline-grid;grid-template-columns:48px 64px 48px;border:1.5px solid #DDC2C8;border-radius:12px;overflow:hidden;width:max-content}
+.qta button{border:0;background:var(--velina);color:var(--stelo);font-size:1.25rem;cursor:pointer;min-height:46px}
+.campo .qta input{border:0;border-radius:0;text-align:center;min-height:46px;padding:0}
+.qta.piccola{grid-template-columns:40px 40px 40px;margin-top:8px}
+.qta.piccola span{display:grid;place-items:center;font-weight:600}
+.scheda-azioni{display:grid;gap:10px}
+.btn-scuro{background:var(--stelo);color:var(--latte)}
+.garanzie{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px;font-size:.9375rem;color:var(--stelo-2)}
+.garanzie li{display:flex;gap:10px;align-items:flex-start}
+.garanzie .icona{color:var(--rosa-antico);margin-top:2px}
+.garanzie.piccole{font-size:.875rem;margin-top:16px}
+.info{margin-top:20px;border-top:1px solid #EADCDC;padding-top:14px}
+.info summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.info p{color:var(--stelo-2);font-size:.9375rem}
+.correlati{padding:24px 0 64px;border-top:1px solid #EADCDC}
+.correlati h2{font-size:clamp(1.75rem,6vw,2.5rem);margin-bottom:22px}
+.scheda-sobria .scheda-prezzo{color:var(--stelo);font-size:1.5rem}
+
+/* carrello */
+.carrello{display:grid;gap:28px;padding-bottom:64px}
+.righe{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.riga{display:grid;grid-template-columns:72px 1fr auto;gap:14px;align-items:start;padding:14px;background:#fff;border:1px solid #EADCDC;border-radius:20px 6px 20px 6px}
+.riga img{width:72px;height:93px;object-fit:cover;border-radius:14px 4px 14px 4px}
+.riga h3{font:600 1rem/1.3 var(--sans)}
+.riga h3 a{text-decoration:none}
+.riga p{font-size:.875rem;color:var(--stelo-2)}
+.riga-prezzo{display:grid;justify-items:end;gap:6px}
+.togli{border:0;background:none;color:var(--stelo-2);text-decoration:underline;cursor:pointer;font:inherit;font-size:.8125rem;min-height:32px}
+.vuoto{display:grid;gap:16px;justify-items:start;padding:24px 0}
+.consegna-form{display:grid;gap:18px;margin-top:28px}
+.consegna-form h2{font-size:1.75rem;margin-top:8px}
+.fascia-oraria{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.fascia-oraria legend{width:100%}
+.fascia-oraria label{display:flex;align-items:center;gap:8px;min-height:44px}
+.riepilogo{align-self:start;padding:22px;background:var(--velina);border-radius:var(--p-s) 8px var(--p-s) 8px;display:grid;gap:12px}
+.riepilogo h2{font-size:1.75rem}
+.riepilogo dl{display:grid;grid-template-columns:1fr auto;gap:8px;margin:0 0 6px}
+.riepilogo dd{margin:0;text-align:right}
+.riepilogo .tot{font-weight:600;font-size:1.125rem;border-top:1px solid #DDC2C8;padding-top:10px}
+.nota-bozza{font-size:.875rem;background:#fff;padding:10px 12px;border-radius:10px}
+
+/* consegna, onoranze, negozio */
+.cerca{display:grid;gap:6px;max-width:420px;margin-bottom:16px}
+.cerca label{font-weight:600}
+.cerca input{min-height:48px;padding:10px 14px;border:1.5px solid #DDC2C8;border-radius:12px;font:inherit;background:#fff;color:var(--stelo)}
+.tabella-scorre{max-height:460px;overflow:auto;background:#fff;border-radius:16px;border:1px solid #EADCDC}
+.tabella-loc{width:100%;border-collapse:collapse;font-size:.9375rem}
+.tabella-loc th,.tabella-loc td{text-align:left;padding:10px 14px;border-bottom:1px solid #F0E6E6;font-weight:400}
+.tabella-loc thead th{position:sticky;top:0;background:var(--stelo);color:var(--latte);font-weight:600}
+.tabella-loc td:last-child{text-align:right;font-weight:600}
+.buono{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.buono li{padding:20px;border:1px solid #EADCDC;border-radius:24px 6px 24px 6px}
+.buono h3{font-size:1.5rem;margin-bottom:6px}
+.buono p{color:var(--stelo-2)}
+.onoranze-testa{padding:8px 0 56px}
+.onoranze-testa h1{font-size:clamp(2.5rem,9vw,4.25rem);color:var(--latte);margin:10px 0 14px}
+.onoranze-testa .sotto{color:#DCE3E0;font-size:1.125rem;max-width:34em}
+.galleria{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.galleria img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--p-s) 8px var(--p-s) 8px}
+.galleria img:first-child{grid-column:1/-1;aspect-ratio:5/4}
+.contatti{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:8px}
+.contatti li{display:flex;gap:10px;align-items:center}
+.didascalia{font-size:.875rem;color:var(--stelo-2);margin-top:8px}
+.pagamenti{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.pagamenti li{display:inline-flex;gap:6px;align-items:center;font-size:.8125rem;padding:6px 10px;border:1px solid #3c5955;border-radius:8px}
+.avviso{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:480px;margin:0 auto;background:var(--stelo);color:var(--latte);padding:14px 18px;border-radius:18px 5px 18px 5px;box-shadow:0 10px 30px rgba(20,50,47,.25)}
+.avviso a{color:var(--rosa);font-weight:600}
+[hidden]{display:none!important}
+
+@media (min-width:700px){
+  .vantaggi{grid-template-columns:repeat(3,1fr)}
+  .campo-riga{grid-template-columns:1fr 1fr}
+  .buono{grid-template-columns:1fr 1fr}
+  .galleria{grid-template-columns:repeat(3,1fr)}
+  .galleria img:first-child{grid-column:auto;aspect-ratio:4/5}
+  .occasioni{grid-template-columns:repeat(3,1fr)}
+  .prodotti{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .recensioni{grid-template-columns:1fr 1fr}
+}
+@media (min-width:960px){
+  .testata .wrap{grid-template-columns:auto 1fr auto;gap:28px}
+  .menu{display:none}
+  .marchio{justify-self:start;text-align:left}
+  .nav-ampia{display:flex;align-items:center;justify-content:flex-end;gap:26px}
+  .nav-ampia a{text-decoration:none;font-weight:600;font-size:.9375rem}
+  .nav-ampia a:not(.btn):hover{color:var(--rosa-antico)}
+  .nav-ampia .btn{min-height:44px;padding:0 18px}
+  .hero{padding:48px 0 24px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
+  .foto-hero{order:0}
+  .foto-hero img{aspect-ratio:4/5}
+  .sez{padding:96px 0}
+  .prodotti{grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 22px}
+  .card-azioni{grid-template-columns:1fr 1.3fr}
+  .card-azioni .btn-vuoto{display:inline-flex}
+  .consegna{grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+  .onoranze-griglia{grid-template-columns:1.2fr 1fr;align-items:start;gap:64px}
+  .dove{grid-template-columns:1.1fr .9fr;align-items:center;gap:64px}
+  .piede .wrap{grid-template-columns:1.2fr 1fr 1fr 1fr}
+  .piede .legale{grid-column:1/-1}
+  .chiusura .box{grid-template-columns:1fr auto;align-items:center;padding:40px 48px}
+  .sez-testa.riga{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+  .barra-cat .wrap{grid-template-columns:minmax(0,1fr) auto;align-items:center}
+  .chips{margin:0;padding:2px 0;flex-wrap:wrap}
+  .ordina{gap:18px}
+  .scheda{grid-template-columns:1fr 1fr;gap:56px;align-items:start;padding-top:16px}
+  .scheda-foto{position:sticky;top:96px}
+  .scheda-azioni{grid-template-columns:1fr 1fr}
+  .carrello{grid-template-columns:1fr 360px;gap:48px}
+  .riepilogo{position:sticky;top:96px}
+  .buono{grid-template-columns:repeat(3,1fr)}
+  .barra-cat{top:69px}
+}
+@media (min-width:1100px){.occasioni{grid-template-columns:repeat(6,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script src="js/dati.js" defer></script><script src="js/negozio.js" defer></script>
+</head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></symbol>
+<symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+<symbol id="i-borsa" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14H5L4 7h3Zm2 0h6V6a3 3 0 0 0-6 0v1Zm-2.9 2 .8 10h10.2l.8-10H6.1Z"/></symbol>
+<symbol id="i-camion" viewBox="0 0 24 24"><path d="M2 5h12v3h4l4 4v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2V5Zm2 2v8h.8a3 3 0 0 1 4.4 0H12V7H4Zm10 3v5h.8a3 3 0 0 1 4.4 0h.8v-2.2L17.2 10H14ZM6 16.2a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6Zm11 0a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6Z"/></symbol>
+<symbol id="i-carta" viewBox="0 0 24 24"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0v2h16V6H4Zm0 5v7h16v-7H4Zm2 4h5v2H6v-2Z"/></symbol>
+<symbol id="i-fiore" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3v.3A3 3 0 0 1 19.7 9 3 3 0 0 1 18 14.2 3 3 0 0 1 14 18.6V22h-4v-3.4A3 3 0 0 1 6 14.2 3 3 0 0 1 4.3 9 3 3 0 0 1 9 5.3V5a3 3 0 0 1 3-3Zm0 7.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/></symbol>
+</svg><a class="salta" href="#contenuto">Vai al contenuto</a>
+<p class="avviso-bozza">Bozza dimostrativa: ordini e pagamenti non sono attivi</p>
+<header class="testata"><div class="wrap">
+<details class="menu"><summary aria-label="Apri il menu"><span></span></summary><nav aria-label="Menu"><a href="index.html">Home</a><a href="catalogo.html">Catalogo</a><a href="consegna.html">Consegna</a><a href="onoranze.html">Onoranze funebri</a><a href="negozio.html">Il negozio</a><a class="btn btn-wa" href="https://wa.me/393280710554?text=Buongiorno%2C%20vorrei%20ordinare%20dei%20fiori."><svg class="icona" aria-hidden="true"><use href="#i-wa"/></svg> Ordina su WhatsApp</a><a class="btn btn-vuoto" href="tel:+390832726127"><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg> 0832 726127</a></nav></details>
+<a class="marchio" href="index.html"><b>Rizzato Fiori</b><small>LECCE</small></a>
+<nav class="nav-ampia" aria-label="Principale"><a href="catalogo.html">Catalogo</a><a href="consegna.html">Consegna</a><a href="onoranze.html">Onoranze funebri</a><a href="negozio.html">Il negozio</a><a class="tel-ampio" href="tel:+390832726127"><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg> 0832 726127</a></nav>
+<a class="carrello-testata" href="carrello.html" aria-label="Carrello"><svg class="icona" aria-hidden="true"><use href="#i-borsa"/></svg><span class="conta" data-conta hidden>0</span></a>
+</div></header>
+<main id="contenuto">
+<div class="wrap">
+<nav class="briciole" aria-label="Sei qui"><a href="index.html">Home</a> / <span>Carrello</span></nav>
+<h1 class="titolo-pagina">Il tuo <em>carrello</em></h1>
+<div class="carrello" data-carrello>
+<div>
+<ul class="righe" data-righe></ul>
+<div class="vuoto" data-vuoto hidden><p>Il carrello è vuoto.</p><a class="btn btn-pieno" href="catalogo.html">Scegli i fiori</a></div>
+<form class="consegna-form" data-ordine hidden>
+<h2>Dove e quando</h2>
+<div class="campo-riga">
+<div class="campo"><label for="c-loc">Località</label><select id="c-loc" name="loc" data-localita required></select></div>
+<div class="campo"><label for="c-data">Giorno di consegna</label><input id="c-data" name="data" type="date" required></div>
+</div>
+<div class="campo"><label for="c-ind">Indirizzo del destinatario</label><input id="c-ind" name="indirizzo" autocomplete="street-address" placeholder="Via e numero civico" required></div>
+<div class="campo-riga">
+<div class="campo"><label for="c-dest">Nome del destinatario</label><input id="c-dest" name="destinatario" required></div>
+<div class="campo"><label for="c-tdest">Telefono del destinatario</label><input id="c-tdest" name="tel_dest" type="tel" inputmode="tel"><small>Lo chiamiamo solo se non è in casa.</small></div>
+</div>
+<fieldset class="fascia-oraria"><legend>Fascia oraria</legend>
+<label><input type="radio" name="fascia" value="mattina" checked> Mattina</label><label><input type="radio" name="fascia" value="pomeriggio"> Pomeriggio</label><label><input type="radio" name="fascia" value="ritiro"> Ritiro in negozio</label></fieldset>
+<div class="campo"><label for="c-note">Note per il fiorista <span>(facoltativo)</span></label><textarea id="c-note" name="note" rows="2"></textarea></div>
+<h2>I tuoi dati</h2>
+<div class="campo-riga">
+<div class="campo"><label for="c-nome">Nome e cognome</label><input id="c-nome" name="nome" autocomplete="name" required></div>
+<div class="campo"><label for="c-tel">Telefono</label><input id="c-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>
+</div>
+</form>
+</div>
+<aside class="riepilogo" data-riepilogo hidden aria-labelledby="t-riep">
+<h2 id="t-riep">Riepilogo</h2>
+<dl><dt>Fiori</dt><dd data-subtotale>0 €</dd><dt>Consegna</dt><dd data-consegna>—</dd><dt class="tot">Totale</dt><dd class="tot" data-totale>0 €</dd></dl>
+<button class="btn btn-pieno" type="button" data-paga><svg class="icona" aria-hidden="true"><use href="#i-carta"/></svg> Paga con carta o PayPal</button>
+<button class="btn btn-wa" type="button" data-invia-wa><svg class="icona" aria-hidden="true"><use href="#i-wa"/></svg> Invia l'ordine su WhatsApp</button>
+<p class="nota-bozza" data-nota-paga hidden>In questa bozza il pagamento non è attivo: si collega a carta e PayPal dopo l'accordo.</p>
+<ul class="garanzie piccole"><li><svg class="icona" aria-hidden="true"><use href="#i-camion"/></svg> Consegna a mano, anche in giornata su accordo</li><li><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg> Dubbi? <a href="tel:+390832726127">0832 726127</a></li></ul>
+</aside>
+</div>
+</div></main>
+<footer class="piede"><div class="wrap">
+<div><a class="marchio" href="index.html"><b>Rizzato Fiori</b><small>LECCE</small></a><p style="margin-top:14px">Fiori freschi, piante e composizioni con consegna a domicilio a Lecce e nel Salento.</p>
+<ul class="pagamenti" aria-label="Pagamenti"><li><svg class="icona" aria-hidden="true"><use href="#i-carta"/></svg> Carta</li><li>PayPal</li><li><svg class="icona" aria-hidden="true"><use href="#i-camion"/></svg> Consegna a mano</li></ul></div>
+<div><h2>Negozio</h2><ul><li>Via Alfonso Sozy Carafa 63, 73100 Lecce</li><li><a href="tel:+390832726127">0832 726127</a></li><li><a href="tel:+393280710554">328 071 0554</a> (anche WhatsApp)</li><li><a href="mailto:info@rizzatofiori.it">info@rizzatofiori.it</a></li></ul></div>
+<div><h2>Acquista</h2><ul><li><a href="catalogo.html">Catalogo</a></li><li><a href="consegna.html">Consegna e costi</a></li><li><a href="carrello.html">Carrello</a></li><li><a href="negozio.html">Il negozio</a></li></ul></div>
+<div><h2>Onoranze funebri</h2><ul><li><a href="onoranze.html">Onoranze Funebri Rizzato</a></li><li>Via Alfonso Sozy Carafa 64/66</li><li>Giorno e notte: <a href="tel:+393385864795">338 586 4795</a></li><li><a href="https://www.facebook.com/consegnafiorilecce/">Facebook</a> · Instagram [DA CONFERMARE]</li></ul></div>
+<p class="legale">Rizzato Fiori di Rizzato Ermanno · P.IVA 04164070759 [DA CONFERMARE] · Privacy · Cookie · Termini e condizioni · Bozza dimostrativa, non indicizzata</p>
+</div></footer>
+<div class="avviso" role="status" aria-live="polite" hidden></div>
+</body></html>
