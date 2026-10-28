@@ -48,7 +48,10 @@ p{margin:0}
 .carrello-testata .icona{width:26px;height:26px}
 .conta{position:absolute;top:4px;right:2px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--rosa-antico);color:#fff;font:600 .75rem/20px var(--sans);text-align:center}
 .avviso-bozza{margin:0;background:var(--stelo);color:#DCE3E0;font-size:.8125rem;text-align:center;padding:6px 12px}
-.tel-ampio{display:inline-flex;align-items:center;gap:6px}
+.icone-testata{justify-self:end;display:flex;align-items:center;gap:4px}
+.tel-icona{display:none;place-items:center;width:48px;height:48px;color:var(--stelo);border-radius:50%}
+.tel-icona .icona{width:24px;height:24px}
+.tel-icona:hover,.carrello-testata:hover{color:var(--rosa-antico)}
 .nav-ampia a[aria-current]{color:var(--rosa-antico)}
 .menu{justify-self:start}
 .menu summary{list-style:none;cursor:pointer;width:48px;height:48px;display:grid;place-items:center}
@@ -349,6 +352,7 @@ p{margin:0}
 }
 @media (min-width:960px){
   .testata .wrap{grid-template-columns:auto 1fr auto;gap:28px}
+  .tel-icona{display:grid}
   .menu{display:none}
   .marchio{justify-self:start;text-align:left}
   .nav-ampia{display:flex;align-items:center;justify-content:flex-end;gap:26px}
@@ -400,8 +404,8 @@ p{margin:0}
 <header class="testata"><div class="wrap">
 <details class="menu"><summary aria-label="Apri il menu"><span></span></summary><nav aria-label="Menu"><a href="index.html">Home</a><a href="catalogo.html" aria-current="page">Catalogo</a><a href="consegna.html">Consegna</a><a href="onoranze.html">Onoranze funebri</a><a href="negozio.html">Il negozio</a><a class="btn btn-wa" href="https://wa.me/393280710554?text=Buongiorno%2C%20vorrei%20ordinare%20dei%20fiori."><svg class="icona" aria-hidden="true"><use href="#i-wa"/></svg> Ordina su WhatsApp</a><a class="btn btn-vuoto" href="tel:+390832726127"><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg> 0832 726127</a></nav></details>
 <a class="marchio" href="index.html"><b>Rizzato Fiori</b><small>LECCE</small></a>
-<nav class="nav-ampia" aria-label="Principale"><a href="catalogo.html" aria-current="page">Catalogo</a><a href="consegna.html">Consegna</a><a href="onoranze.html">Onoranze funebri</a><a href="negozio.html">Il negozio</a><a class="tel-ampio" href="tel:+390832726127"><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg> 0832 726127</a></nav>
-<a class="carrello-testata" href="carrello.html" aria-label="Carrello"><svg class="icona" aria-hidden="true"><use href="#i-borsa"/></svg><span class="conta" data-conta hidden>0</span></a>
+<nav class="nav-ampia" aria-label="Principale"><a href="catalogo.html" aria-current="page">Catalogo</a><a href="consegna.html">Consegna</a><a href="onoranze.html">Onoranze funebri</a><a href="negozio.html">Il negozio</a></nav>
+<div class="icone-testata"><a class="tel-icona" href="tel:+390832726127" aria-label="Chiama il negozio: 0832 726127" title="Chiama 0832 726127"><svg class="icona" aria-hidden="true"><use href="#i-tel"/></svg></a><a class="carrello-testata" href="carrello.html" aria-label="Carrello"><svg class="icona" aria-hidden="true"><use href="#i-borsa"/></svg><span class="conta" data-conta hidden>0</span></a></div>
 </div></header>
 <main id="contenuto">
 <div class="cat-testa"><div class="wrap">
