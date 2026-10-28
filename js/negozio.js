@@ -129,7 +129,7 @@
       $('[data-vuoto]').hidden = !vuoto; form.hidden = vuoto; $('[data-riepilogo]').hidden = vuoto;
       $('[data-righe]').innerHTML = c.righe.map(function (r, i) {
         var p = RF.p[r.id], v = p.v[r.v] || p.v[0];
-        return '<li class="riga"><img src="img/p' + r.id + '-240.webp" width="96" height="124" alt="">' +
+        return '<li class="riga-carrello"><img src="img/p' + r.id + '-240.webp" width="96" height="124" alt="">' +
           '<div><h3><a href="prodotto.html?id=' + r.id + '">' + p.n + '</a></h3><p>' + v[0] + (r.b ? ' · Biglietto: «' + esc(r.b) + '»' : '') + '</p>' +
           '<div class="qta piccola"><button type="button" data-q="-1" data-i="' + i + '" aria-label="Una in meno">−</button><span>' + r.q + '</span><button type="button" data-q="1" data-i="' + i + '" aria-label="Una in più">+</button></div></div>' +
           '<div class="riga-prezzo"><b>' + euro(v[1] * r.q) + '</b><button type="button" class="togli" data-togli="' + i + '">Rimuovi</button></div></li>';
