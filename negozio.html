@@ -282,14 +282,40 @@ p{margin:0}
 .nota-bozza{font-size:.875rem;background:#fff;padding:10px 12px;border-radius:10px}
 
 /* consegna, onoranze, negozio */
-.cerca{display:grid;gap:6px;max-width:420px;margin-bottom:16px}
-.cerca label{font-weight:600}
-.cerca input{min-height:48px;padding:10px 14px;border:1.5px solid #DDC2C8;border-radius:12px;font:inherit;background:#fff;color:var(--stelo)}
-.tabella-scorre{max-height:460px;overflow:auto;background:#fff;border-radius:16px;border:1px solid #EADCDC}
-.tabella-loc{width:100%;border-collapse:collapse;font-size:.9375rem}
-.tabella-loc th,.tabella-loc td{text-align:left;padding:10px 14px;border-bottom:1px solid #F0E6E6;font-weight:400}
-.tabella-loc thead th{position:sticky;top:0;background:var(--stelo);color:var(--latte);font-weight:600}
-.tabella-loc td:last-child{text-align:right;font-weight:600}
+/* consegna o ritiro, CAP */
+.modi{border:0;padding:0;margin:0;display:grid;gap:10px}
+.modo{position:relative;cursor:pointer}
+.modo input{position:absolute;opacity:0}
+.modo span{display:grid;grid-template-columns:28px 1fr;column-gap:12px;padding:14px 16px;border:1.5px solid #DDC2C8;border-radius:20px 6px 20px 6px;background:#fff;font-size:.875rem;color:var(--stelo-2)}
+.modo .icona{grid-row:span 2;width:26px;height:26px;color:var(--rosa-antico);align-self:center}
+.modo b{color:var(--stelo);font-size:1rem}
+.modo input:checked+span{border-color:var(--rosa-antico);box-shadow:inset 0 0 0 1px var(--rosa-antico);background:var(--velina)}
+.modo input:focus-visible+span{outline:3px solid var(--rosa-antico);outline-offset:2px}
+.blocco-domicilio{border:0;padding:0;margin:0;display:grid;gap:18px}
+.cap-riga{grid-template-columns:120px 1fr}
+.esito-cap{margin:-6px 0 0;font-size:.9375rem;min-height:1.4em}
+.esito-cap.si{color:var(--wa);font-weight:600}
+.esito-cap.no{color:var(--rosa-antico-scuro)}
+.calcola{display:grid;gap:8px}
+.calcola-box{background:#fff;border-radius:var(--p-s) 8px var(--p-s) 8px;padding:22px;box-shadow:0 12px 32px rgba(20,50,47,.08);display:grid;gap:10px}
+.calcola-box label{font-weight:600}
+.calcola-box input{min-height:56px;padding:12px 16px;border:1.5px solid #DDC2C8;border-radius:14px;font:inherit;font-size:1.125rem;background:var(--latte);color:var(--stelo)}
+.risultati{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.risultati li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:var(--velina);border-radius:14px 4px 14px 4px}
+.risultati li span{display:grid;font-size:.8125rem;color:var(--stelo-2)}
+.risultati li b{font-size:1rem;color:var(--stelo)}
+.risultati strong{font:400 1.75rem/1 var(--serif);color:var(--rosa-antico)}
+.risultati .nessuno{display:block;background:transparent;padding:4px 0;font-size:.9375rem}
+.calcola-nota{font-size:.8125rem;color:var(--stelo-2)}
+.fasce{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.fascia{padding:20px;border:1px solid #EADCDC;border-radius:24px 6px 24px 6px;background:#fff}
+.fascia-testa{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:2px 12px;margin-bottom:14px}
+.fascia-testa h3{font-size:1.625rem}
+.fascia-prezzo{font:400 1.75rem/1 var(--serif);color:var(--rosa-antico);grid-row:span 2}
+.fascia-conta{font-size:.8125rem;color:var(--stelo-2)}
+.paesi{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.paesi li{display:inline-flex;gap:6px;align-items:baseline;padding:5px 10px;border-radius:999px;background:var(--velina);font-size:.8125rem}
+.paesi b{font-weight:600;color:var(--rosa-antico-scuro)}
 .buono{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .buono li{padding:20px;border:1px solid #EADCDC;border-radius:24px 6px 24px 6px}
 .buono h3{font-size:1.5rem;margin-bottom:6px}
@@ -313,6 +339,8 @@ p{margin:0}
   .vantaggi{grid-template-columns:repeat(3,1fr)}
   .campo-riga{grid-template-columns:1fr 1fr}
   .buono{grid-template-columns:1fr 1fr}
+  .modi{grid-template-columns:1fr 1fr}
+  .calcola{grid-template-columns:1fr 1fr;align-items:center;gap:40px}
   .galleria{grid-template-columns:repeat(3,1fr)}
   .galleria img:first-child{grid-column:auto;aspect-ratio:4/5}
   .occasioni{grid-template-columns:repeat(3,1fr)}
@@ -351,6 +379,8 @@ p{margin:0}
   .carrello{grid-template-columns:1fr 360px;gap:48px}
   .riepilogo{position:sticky;top:96px}
   .buono{grid-template-columns:repeat(3,1fr)}
+  .fasce{grid-template-columns:1fr 1fr}
+  .fascia:first-child{grid-column:1/-1}
   .barra-cat{top:69px}
 }
 @media (min-width:1100px){.occasioni{grid-template-columns:repeat(6,1fr)}}
